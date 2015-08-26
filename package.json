@@ -1,0 +1,12 @@
+{
+  "name": "purescript-halogen-css",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-purescript": "^0.6.0",
+    "purescript": "^0.7.3-fixed",
+    "rimraf": "^2.4.1"
+  }
+}

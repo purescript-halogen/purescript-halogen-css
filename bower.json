@@ -1,0 +1,29 @@
+{
+  "name": "purescript-halogen-css",
+  "homepage": "https://github.com/slamdata/purescript-halogen-css",
+  "description": "An adapter between the `purescript-halogen` and `purescript-css` libraries.",
+  "keywords": [
+    "purescript",
+    "halogen",
+    "css"
+  ],
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/slamdata/purescript-halogen-css.git"
+  },
+  "ignore": [
+    "**/.*",
+    "bower.json",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "purescript-css": "^0.3.1",
+    "purescript-halogen": "4ad7f1e605c84d6eda8a9924fceca437695e658e"
+  },
+  "resolutions": {
+    "purescript-strings": "^0.7.0"
+  }
+}

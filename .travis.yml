@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - 0.10
+install:
+  - npm install gulp bower -g
+  - npm install
+  - bower install
+script:
+  - gulp

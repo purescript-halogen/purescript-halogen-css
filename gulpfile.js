@@ -33,7 +33,7 @@ gulp.task("docs", ["clean-docs"], function() {
   return purescript.pscDocs({
     src: sources,
     docgen: {
-      "Halogen.HTML.CSS": "docs/Halogen-HTML-CSS.md"
+      "Halogen.HTML.CSS": "docs/Halogen/HTML/CSS.md"
     }
   });
 });

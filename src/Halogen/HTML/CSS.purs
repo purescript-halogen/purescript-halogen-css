@@ -20,6 +20,7 @@ import Css.Render (render, renderedSheet, collect)
 import Css.Stylesheet (Css(), Rule(..), runS)
 
 import Halogen.HTML.Core (HTML(), Prop(), IsProp, prop, propName, attrName)
+import qualified Halogen.HTML as H
 import qualified Halogen.HTML.Elements as H
 import qualified Halogen.HTML.Properties as P
 

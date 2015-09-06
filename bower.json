@@ -21,9 +21,10 @@
   ],
   "dependencies": {
     "purescript-css": "^0.3.1",
-    "purescript-halogen": "4ad7f1e605c84d6eda8a9924fceca437695e658e"
+    "purescript-halogen": "4be794a56a9910bcac4d8760eefc408c714d8d40"
   },
   "resolutions": {
-    "purescript-strings": "^0.7.0"
+    "purescript-strings": "^0.7.0",
+    "purescript-transformers": "~0.7.1"
   }
 }

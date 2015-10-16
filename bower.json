@@ -7,7 +7,7 @@
     "halogen",
     "css"
   ],
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/slamdata/purescript-halogen-css.git"
@@ -20,11 +20,7 @@
     "test"
   ],
   "dependencies": {
-    "purescript-css": "^0.3.1",
-    "purescript-halogen": "4be794a56a9910bcac4d8760eefc408c714d8d40"
-  },
-  "resolutions": {
-    "purescript-strings": "^0.7.0",
-    "purescript-transformers": "~0.7.1"
+    "purescript-css": "^0.4.0",
+    "purescript-halogen": "^0.5.0"
   }
 }

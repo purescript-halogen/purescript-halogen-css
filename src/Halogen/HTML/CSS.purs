@@ -15,9 +15,9 @@ import Data.String (joinWith)
 import Data.Tuple (Tuple(..))
 import qualified Data.StrMap as SM
 
-import Css.Property (Key(), Value())
-import Css.Render (render, renderedSheet, collect)
-import Css.Stylesheet (Css(), Rule(..), runS)
+import CSS.Property (Key(), Value())
+import CSS.Render (render, renderedSheet, collect)
+import CSS.Stylesheet (CSS(), Rule(..), runS)
 
 import Halogen.HTML.Core (HTML(), Prop(), IsProp, prop, propName, attrName)
 import qualified Halogen.HTML as H
@@ -39,11 +39,11 @@ instance stylesIsProp :: IsProp Styles where
 -- | For example:
 -- |
 -- | ```purescript
--- | H.div [ Css.style do color red
+-- | H.div [ CSS.style do color red
 -- |                      display block ]
 -- |       [ ... ]
 -- | ```
-style :: forall i. Css -> Prop i
+style :: forall i. CSS -> Prop i
 style = prop (propName "style") (Just $ attrName "style") <<< Styles <<< rules <<< runS
   where
   rules :: Array Rule -> SM.StrMap String
@@ -60,7 +60,7 @@ style = prop (propName "style") (Just $ attrName "style") <<< Styles <<< rules <
   rights = mapMaybe (either (const Nothing) Just)
 
 -- | Render a set of rules as a `style` element.
-stylesheet :: forall p i. Css -> HTML p i
+stylesheet :: forall p i. CSS -> HTML p i
 stylesheet css = H.style [ P.type_ "text/css" ] [ H.text content ]
   where
   content = fromMaybe "" $ renderedSheet $ render css

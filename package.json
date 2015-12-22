@@ -1,13 +1,11 @@
 {
-  "name": "purescript-halogen-css",
   "private": true,
-  "license": "Apache-2.0",
+  "scripts": {
+    "postinstall": "pulp dep install",
+    "test": "pulp build"
+  },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-jscs": "^1.6.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-purescript": "^0.7.0",
-    "purescript": "^0.7.6",
-    "rimraf": "^2.4.1"
+    "pulp": "^6.0.0",
+    "purescript": "^0.7.6"
   }
 }

@@ -21,7 +21,6 @@ import CSS.Stylesheet (CSS(), Rule(..), runS)
 
 import Halogen.HTML.Core (HTML(), Prop(), IsProp, prop, propName, attrName)
 import qualified Halogen.HTML as H
-import qualified Halogen.HTML.Elements as H
 import qualified Halogen.HTML.Properties as P
 
 -- | A newtype for CSS styles

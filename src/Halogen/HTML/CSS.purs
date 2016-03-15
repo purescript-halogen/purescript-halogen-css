@@ -12,16 +12,16 @@ import Data.Either (Either(), either)
 import Data.List (fromList, toList)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.String (joinWith)
+import Data.StrMap as SM
 import Data.Tuple (Tuple(..))
-import qualified Data.StrMap as SM
 
 import CSS.Property (Key(), Value())
 import CSS.Render (render, renderedSheet, collect)
 import CSS.Stylesheet (CSS(), Rule(..), runS)
 
+import Halogen.HTML as H
 import Halogen.HTML.Core (HTML(), Prop(), IsProp, prop, propName, attrName)
-import qualified Halogen.HTML as H
-import qualified Halogen.HTML.Properties as P
+import Halogen.HTML.Properties as P
 
 -- | A newtype for CSS styles
 newtype Styles = Styles (SM.StrMap String)

@@ -20,7 +20,7 @@ import CSS.Render (render, renderedSheet, collect)
 import CSS.Stylesheet (CSS(), Rule(..), runS)
 
 import Halogen.HTML as H
-import Halogen.HTML.Core (HTML(), Prop(), IsProp, prop, propName, attrName)
+import Halogen.HTML.Core (HTML(), Prop(), class IsProp, prop, propName, attrName)
 import Halogen.HTML.Properties as P
 
 -- | A newtype for CSS styles

@@ -9,7 +9,7 @@ import Prelude
 
 import Data.Array (mapMaybe)
 import Data.Either (Either(), either)
-import Data.List (fromList, toList)
+import Data.List (toUnfoldable, fromFoldable)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.String (joinWith)
 import Data.StrMap as SM
@@ -31,7 +31,7 @@ runStyles :: Styles -> SM.StrMap String
 runStyles (Styles m) = m
 
 instance stylesIsProp :: IsProp Styles where
-  toPropString _ _ (Styles m) = joinWith "; " $ (\(Tuple key value) -> key <> ": " <> value) <$> fromList (SM.toList m)
+  toPropString _ _ (Styles m) = joinWith "; " $ (\(Tuple key value) -> key <> ": " <> value) <$> toUnfoldable (SM.toList m)
 
 -- | Render a set of rules as an inline style.
 -- |
@@ -46,7 +46,7 @@ style :: forall i. CSS -> Prop i
 style = prop (propName "style") (Just $ attrName "style") <<< Styles <<< rules <<< runS
   where
   rules :: Array Rule -> SM.StrMap String
-  rules rs = SM.fromList (toList properties)
+  rules rs = SM.fromList (fromFoldable properties)
     where
     properties :: Array (Tuple String String)
     properties = mapMaybe property rs >>= collect >>> rights

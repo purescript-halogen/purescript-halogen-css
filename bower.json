@@ -20,7 +20,7 @@
     "test"
   ],
   "dependencies": {
-    "purescript-css": "^0.6.0",
-    "purescript-halogen": "^0.8.0"
+    "purescript-css": "^1.0.0",
+    "purescript-halogen": "^0.9.0"
   }
 }

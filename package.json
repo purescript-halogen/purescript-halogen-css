@@ -5,8 +5,8 @@
     "build": "pulp build --censor-lib --strict"
   },
   "devDependencies": {
-    "pulp": "^8.2.0",
-    "purescript": "^0.8.5",
+    "pulp": "^9.0.1",
+    "purescript": "^0.9.1",
     "purescript-psa": "^0.3.8",
     "rimraf": "^2.5.2"
   }

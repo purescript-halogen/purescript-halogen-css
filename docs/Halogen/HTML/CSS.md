@@ -6,7 +6,7 @@ This module defines an adapter between the `purescript-halogen` and
 #### `style`
 
 ``` purescript
-style :: forall i. Css -> Prop i
+style :: forall i. CSS -> Prop i
 ```
 
 Render a set of rules as an inline style.
@@ -14,7 +14,7 @@ Render a set of rules as an inline style.
 For example:
 
 ```purescript
-H.div [ Css.style do color red
+HH.div [ CSS.style do color red
                      display block ]
       [ ... ]
 ```
@@ -22,7 +22,7 @@ H.div [ Css.style do color red
 #### `stylesheet`
 
 ``` purescript
-stylesheet :: forall p i. Css -> HTML p i
+stylesheet :: forall p i. CSS -> HTML p i
 ```
 
 Render a set of rules as a `style` element.

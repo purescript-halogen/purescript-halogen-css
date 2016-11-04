@@ -1,13 +1,13 @@
 {
   "private": true,
+  "license": "Apache-2.0",
   "scripts": {
-    "clean": "rimraf output && rimraf .pulp-cache",
+    "clean": "rm -rf output .pulp-cache",
     "build": "pulp build --censor-lib --strict"
   },
   "devDependencies": {
     "pulp": "^9.0.1",
-    "purescript": "^0.9.2",
-    "purescript-psa": "^0.3.9",
-    "rimraf": "^2.5.4"
+    "purescript": "0.10.1",
+    "purescript-psa": "^0.3.9"
   }
 }

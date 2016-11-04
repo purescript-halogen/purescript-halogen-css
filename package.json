@@ -1,9 +1,8 @@
 {
-  "name": "purescript-halogen-css",
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "clean": "rm -rf output .pulp-cache docs",
+    "clean": "rm -rf output .pulp-cache",
     "build": "pulp build --censor-lib --strict"
   },
   "devDependencies": {

@@ -14,10 +14,12 @@
   },
   "ignore": [
     "**/.*",
-    "bower.json",
-    "node_modules",
     "bower_components",
-    "test"
+    "node_modules",
+    "output",
+    "test",
+    "bower.json",
+    "package.json"
   ],
   "dependencies": {
     "purescript-css": "^2.0.0",

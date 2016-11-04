@@ -7,21 +7,21 @@ module Halogen.HTML.CSS
 
 import Prelude
 
+import CSS.Property (Key, Value)
+import CSS.Render (render, renderedSheet, collect)
+import CSS.Stylesheet (CSS, Rule(..), runS)
+
 import Data.Array (mapMaybe, concatMap, singleton)
 import Data.Either (Either)
 import Data.Foldable (foldMap)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Newtype (class Newtype)
+import Data.StrMap as SM
 import Data.String (joinWith)
 import Data.Tuple (Tuple(..))
-import Data.StrMap as SM
 
-import CSS.Property (Key, Value)
-import CSS.Render (render, renderedSheet, collect)
-import CSS.Stylesheet (CSS, Rule(..), runS)
-
-import Halogen.HTML.Core (HTML, Prop, class IsProp, prop, propName, attrName)
 import Halogen.HTML as HH
+import Halogen.HTML.Core (HTML, Prop, class IsProp, prop, propName, attrName)
 import Halogen.HTML.Elements as HE
 import Halogen.HTML.Properties as P
 

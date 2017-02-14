@@ -22,7 +22,7 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-css": "^2.0.0",
-    "purescript-halogen": "1.0.0-rc.2"
+    "purescript-css": "^2.1.0",
+    "purescript-halogen": "^1.0.0-rc.4"
   }
 }

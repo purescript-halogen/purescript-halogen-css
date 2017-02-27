@@ -36,7 +36,7 @@ import Halogen.HTML.Core as HC
 -- | ```
 style ∷ ∀ i r. CSS → HP.IProp (style ∷ String|r) i
 style =
-  HP.prop (HC.PropName "style")
+  HP.attr (HC.AttrName "style")
     <<< toString
     <<< rules
     <<< runS

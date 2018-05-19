@@ -16,9 +16,9 @@ import Data.Either (Either)
 import Data.Foldable (foldMap)
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.MediaType (MediaType(..))
-import Data.StrMap as SM
 import Data.String (joinWith)
 import Data.Tuple (Tuple(..))
+import Foreign.Object as Object
 
 import Halogen.HTML as HH
 import Halogen.HTML.Elements as HE
@@ -41,11 +41,11 @@ style =
     <<< rules
     <<< runS
   where
-  toString ∷ SM.StrMap String → String
-  toString = joinWith "; " <<< SM.foldMap (\key val → [ key <> ": " <> val])
+  toString ∷ Object.Object String → String
+  toString = joinWith "; " <<< Object.foldMap (\key val → [ key <> ": " <> val])
 
-  rules ∷ Array Rule → SM.StrMap String
-  rules rs = SM.fromFoldable properties
+  rules ∷ Array Rule → Object.Object String
+  rules rs = Object.fromFoldable properties
     where
     properties ∷ Array (Tuple String String)
     properties = mapMaybe property rs >>= collect >>> rights

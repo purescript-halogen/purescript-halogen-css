@@ -23,6 +23,6 @@
   ],
   "dependencies": {
     "purescript-css": "^4.0.0",
-    "purescript-halogen": "^4.0.0"
+    "purescript-halogen": "^5.0.0"
   }
 }

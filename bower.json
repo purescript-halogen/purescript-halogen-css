@@ -3,7 +3,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/slamdata/purescript-halogen-css.git"
+    "url": "https://github.com/purescript-halogen/purescript-halogen-css.git"
   },
   "ignore": [
     "**/.*",

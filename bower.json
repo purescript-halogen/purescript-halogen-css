@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "purescript-css": "^6.0.0",
-    "purescript-halogen": "https://github.com/purescript-halogen/purescript-halogen.git#purs-0.15"
+    "purescript-halogen": "^7.0.0"
   }
 }

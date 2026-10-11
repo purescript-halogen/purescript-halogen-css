@@ -1,0 +1,23 @@
+package:
+  name: halogen-css
+  dependencies:
+    - arrays: ">=7.0.0 <8.0.0"
+    - css: ">=6.0.0 <7.0.0"
+    - either: ">=6.0.0 <7.0.0"
+    - foldable-traversable: ">=6.0.0 <7.0.0"
+    - foreign-object: ">=4.0.0 <5.0.0"
+    - halogen: ">=7.0.0 <8.0.0"
+    - maybe: ">=6.0.0 <7.0.0"
+    - media-types: ">=6.0.0 <7.0.0"
+    - prelude: ">=6.0.0 <7.0.0"
+    - strings: ">=6.0.0 <7.0.0"
+    - tuples: ">=7.0.0 <8.0.0"
+  publish:
+    version: 10.0.1
+    license: Apache-2.0
+    location:
+      githubOwner: purescript-halogen
+      githubRepo: purescript-halogen-css
+workspace:
+  packageSet:
+    registry: 81.4.0

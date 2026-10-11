@@ -1,6 +1,5 @@
 /.*
 !/.gitignore
 !/.github
-/bower_components/
 /node_modules/
 /output/

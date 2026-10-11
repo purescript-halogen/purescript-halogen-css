@@ -2,12 +2,10 @@
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "clean": "rm -rf output .pulp-cache",
-    "build": "pulp build -- --censor-lib --strict"
+    "clean": "rm -rf output",
+    "build": "spago build --strict --pedantic-packages"
   },
   "devDependencies": {
-    "pulp": "^16.0.0-0",
-    "purescript": "^0.15.0-0",
-    "purescript-psa": "^0.8.2"
+    "purescript": "^0.15.16"
   }
 }
